@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'Blackpearl';
+    src: url('https://FontWebsite.monkeydog.repl.co/Blackpearl-vPxA.woff') format('woff'),
+         url('https://FontWebsite.monkeydog.repl.co/Blackpearl-vPxA.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Blackpearl';
+    color: white;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: auto;
+    overflow: hidden;
+    user-select: none;
+}
+
+video.mainBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+}
+
+img.logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    user-select: none;
+    pointer-events: none;
+}
+
+.footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 10%;
+    z-index: 2;
+    transform: translate(-50%, 100%);
+    text-align: center;
+    user-select: none;
+    pointer-events: none;
+}
+
+.big {
+    font-size: 20px;
+}
+
+.categories {
+    z-index: 3;
+}
+
+ul {
+    z-index: 12;
+    position: absolute;
+    width: 100vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 11vh;
+    left: 42vw;
+    transform: translate(-2.5%, 0%);
+}
+
+.two {
+    z-index: 11;
+    position: absolute;
+    width: 100vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 21vh;
+    left: 35vw;
+    transform: translate(-2%, 0%);
+}
+
+.categoriesButton {
+    font-family: 'Blackpearl';
+    cursor: pointer;
+    border: 1px solid rgb(255, 174, 0);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4), 50%, rgba(138, 94, 0, 0.4) 85%);
+    font-size: 1vw;
+    margin-left: 20px;
+}
+  
+li {
+    float: left;
+}
+  
+li button {
+    font-family: 'Blackpearl';
+    cursor: pointer;
+    border: 1px solid red;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4), 50%, rgba(138, 94, 0, 0.4) 85%);
+    font-size: 1vw;
+}
+
+li button:hover:not(.active) {
+    background-color: #000;
+}
+
+.active {
+    cursor: default;
+    border: 1px solid #fff;
+    color: #cfcfcf;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4), 50%, rgba(158, 94, 0, 0.4) 85%);
+}
+
+.round {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.round2 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.discordBtn {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8%;
+    height: 18%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 100px;
+}
+
+img.DiscordLogo {
+    z-index: 10;
+    width: 100%;
+    user-select: none;
+}
+
+.contactText p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -420%);
+    font-size: 2vw;
+    color: #fff;
+    -webkit-text-stroke: 1px blue;
+    z-index: 10;
+    user-select: none;
+}
+
+.categoriesPage {
+    position: relative;
+    /* transform: translate(350%, -350%); */
+    margin-top: 2%;
+    margin-left: 2%;
+    max-width: 10vw;
+    z-index: 10;
+}
+
+.Value {
+    float: right;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+  
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background: linear-gradient(180deg, rgba(213, 85, 0, 1), 50%, rgba(212, 156, 0, 1) 85%);
+}
+  
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.gameSitePage {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.softwarePage {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.toolsPage {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.steamUnlocked {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.fitGirl {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    width: 5%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.headerLogo {
+    position: absolute;
+    top: 30%;
+    left: 49.5%;
+    width: 5%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    width: fit-content;
+}
+
+.importantTextSteam {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.importantTextFitGirl {
+    position: absolute;
+    top: 75%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.importantVid {
+    width: 400px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.fileCr {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 200px;
+}
+
+.karan {
+    position: absolute;
+    top: 40%;
+    left: 67%;
+    width: 5%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 200px;
+}

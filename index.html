@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Paradise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body> 
+    <div class="categories">
+        <ul class="one">
+            <li><button class="active home">Home</button></li>
+            <li><button class="contact">Contact Us</button></li>
+            <li><button class="catagory">Categories</button></li>
+        </ul>
+    </div>
+    <audio id="PirateMusic" loop autoplay>
+        <source src="https://cdn.discordapp.com/attachments/1029915996389134348/1058583098616455208/Hes_a_Pirate.ogg" type="audio/ogg">
+        <source src="src/Hes_a_Pirate.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> 
+    <video preload class="mainBg" loop autoplay muted>
+        <source src="src/Pirate Flag.mp4" type="video/mp4">
+        <source src="https://web.archive.org/web/20220216095615im_/http://thepillagerbay.org/flag.webm" type="video/webm">
+        <source src="https://web.archive.org/web/20220216095615im_/http://thepillagerbay.org/flag.ogv" type="video/ogg">
+    </video>
+    <div class="homePage">
+        <img src="src/Pirate Paradise.png" alt="Pirate Paradise Logo" class="logo">
+        <div class="footer">
+            <p class="big">About This Website</p>
+            <p>Welcome to the ultimate website for finding software, games, and other stuff for free, safely!</p>
+        </div>
+    </div>
+    <div class="contactText hide">
+        <p>Join Our Discord Server!</p>
+        <button class="discordBtn"><img src="https://cdn.discordapp.com/attachments/1029915996389134348/1058612731177078804/discord-icon-all-the-cool-kids-are-moving-discord-podfeet-podcasts-0.png" alt="Discord Logo" class="DiscordLogo"></button>
+    </div>
+    <div class="categoriesPage hide">
+        <div class="categories2 hide">
+            <ul class="two">
+                <li><button class="game categoriesButton">Games</button></li>
+                <li><button class="software categoriesButton">Software</button></li>
+                <li><button class="toolsandutilities categoriesButton">Tools & Utilities</button></li>
+            </ul>
+        </div>
+        <p class="header">Operating System</p>
+        <br>
+        <input type="radio" name="Check" class="hide" checked>
+        <label class="container">Android<span class="Value">3</span>
+        <input type="radio" name="Check" class="anCheck">
+        <span class="checkmark"></span>
+        </label>
+        <label class="container">Windows<span class="Value">3</span>
+        <input type="radio" name="Check" class="winCheck">
+        <span class="checkmark"></span>
+        </label>
+    </div>
+
+    <div class="gameSitePage hide">
+        <div class="windows hide">
+            <p class="headerLogo">Click logo to enter website.</p>
+            <img src="src/steam-unlocked-logo.png" alt="Steam Unlocked" class="steamUnlocked">
+            <div class="importantTextSteam">
+                <center><p style="color: red; font-size: 25px;">[IMPORTANT]<p style="width: 300px;">It is recommended to watch this 
+                    tutorial on how to download from STEAMUNLOCKED.</p>
+                <p></p>
+                <video src="src/SteamUnlocked Tutorial.mp4" oncontextmenu="return false;" controls controlsList="nodownload" class="importantVid vidOne"></video></p></center>
+            </div>
+            <img src="src/fitgirlrepack.jpg" alt="Fit Girl" class="fitGirl">
+            <div class="importantTextFitGirl">
+                <center><p style="color: red; font-size: 25px;">[IMPORTANT]<p style="width: 300px;">It is recommended to watch this 
+                    tutorial on how to download from FITGIRL REPACKS.</p>
+                <p></p>
+                <video src="src/FitGirl Repacks Tutorial.mp4" oncontextmenu="return false;" controls controlsList="nodownload" class="importantVid vidTwo"></video></p></center>
+            </div>
+        </div>
+        <div class="android hide">
+            <center class="middle">Nothing Here Yet!</center>
+        </div>
+    </div>
+
+    <div class="softwarePage hide">
+        <div class="windowstwo hide">
+            <p class="headerLogo">Click logo to enter website.</p>
+            <img src="src/Filecr.png" alt="FileCr" class="fileCr">
+            <div class="importantTextSteam">
+                <center><p style="color: red; font-size: 25px;">[IMPORTANT]<p style="width: 300px;">It is recommended to watch this 
+                    tutorial on how to download from FILECR.</p>
+                <p></p>
+                <video src="src/FileCR Tutorial.mp4" oncontextmenu="return false;" controls controlsList="nodownload" class="importantVid vidThree"></video></p></center>
+            </div>
+            <img src="src/KaranPC.png" alt="KaranPC" class="karan">
+            <div class="importantTextFitGirl">
+                <center><p style="color: red; font-size: 25px;">[IMPORTANT]<p style="width: 300px;">It is recommended to watch this 
+                    tutorial on how to download from KARAN PC.</p>
+                <p></p>
+                <video src="src/Karan PC Tutorial.mp4" oncontextmenu="return false;" controls controlsList="nodownload" class="importantVid vidFour"></video></p></center>
+            </div>
+        </div>
+        <div class="androidtwo hide">
+            <center class="middle">Nothing Here Yet!</center>
+        </div>
+    </div>
+
+    <div class="toolsPage hide">
+        <div class="windowsthree hide">
+            <center class="middle">Nothing Here Yet!</center>
+        </div>
+        <div class="androidthree hide">
+            <center class="middle">Nothing Here Yet!</center>
+        </div>
+    </div>
+</body>
+</html>
